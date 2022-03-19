@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vishwash portfolio</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✌🏻</text></svg>">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      font-family: "Poppins", sans-serif;
+    }
+    html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    body {
+      color: white;
+      margin: 0;
+      padding: 0;
+      perspective: 1px;
+      transform-style: preserve-3d;
+      height: 100%;
+      width: 100%;
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+
+    header {
+      box-sizing: border-box;
+      min-height: 100vh;
+      position: relative;
+      transform-style: inherit;
+      width: 100vw;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    header h1 {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    h2 {
+      position: absolute;
+      left: 50%;
+      top: 53%;
+      transform: translate(-50%, -50%);
+    }
+
+    header,
+    header:before {
+      background: 50% 50% / cover;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: block;
+      background: url(HERO.jpg);
+      
+      background-size: cover;
+      transform-origin: center center 0;
+      transform: translateZ(-1px) scale(2);
+      z-index: -1;
+      min-height: 100vh;
+    }
+
+    .container {
+      z-index: 2;
+      position: absolute;
+      top: 100vh;
+      background: #a4de02;
+      line-height: 30px;
+      font-weight: lighter;
+      padding: 40px;
+      color: grey;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    img {
+      width: 70%;
+      justify-content: center;
+      align-items: center;
+      padding: 2%; 
+    }
+
+    img:hover {
+      opacity: 0.7;
+      transition: 0.5s;
+    }
+    .sites {
+      display: block;
+    }
+
+    .sourcecode {
+      border: 1px solid white;
+      padding: 10px;
+      margin: 10px;
+      background-color: white;
+      color: #a4de02;
+      
+    }
+    .sourcecode:hover {
+      background-color: rgb(1, 110, 1);
+      transition: 1s;
+      color: white;
+    }
+    .content {
+      padding: 20px;
+    }
+    h1 {
+      -moz-animation-duration: 3s;
+      -webkit-animation-duration: 3s;
+      -moz-animation-name: slidein-left;
+      -webkit-animation-name: slidein-left;
+    }
+    
+    .fade-in{
+      opacity: 0;
+      transition: opacity 250ms ease-in;
+
+    }
+
+    .fade-in.appear {
+      opacity: 1;
+      transition: 2s;
+    }
+    img:hover {
+      transform: scale(1.1);
+      z-index: 2;
+    }
+
+    @-moz-keyframes slidein-left {
+      from {
+        margin-left: 100%;
+        width: 300%;
+      }
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
+
+    @-webkit-keyframes slidein-left {
+      from {
+        margin-left: 100%;
+        width: 300%;
+      }
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
+
+    header {
+      -moz-animation-duration: 3s;
+      -webkit-animation-duration: 3s;
+      -moz-animation-name: slidein-right;
+      -webkit-animation-name: slidein-right;
+    }
+
+    @-moz-keyframes slidein-right {
+      from {
+        margin-right: 100%;
+        width: 300%;
+      }
+      to {
+        margin-right: 0%;
+      }
+    }
+
+    @-webkit-keyframes slidein-right {
+      from {
+        margin-right: 100%;
+        width: 300%;
+      }
+      to {
+        margin-right: 0%;
+      }
+    }
+
+    @media (max-width: 700px) {
+      h2 {
+        top: 57%;
+        font-size: 100%;
+      }
+      h1 {
+        font-size: 150%;
+      }
+      img{
+        width: 100%;
+        margin: 0 2%;
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <h1 style="color: black;">Hi, I'm vishwash</h1>
+      <h2 style="color: black;">I'm Frontend Developer</h2>
+    </header>
+    <div class="container">
+      <h1 style="color: white;">ABOUT ME</h1>
+      <p style="color: white; padding-bottom: 20px;">I'm Software Developer and I like to build the web pages. I Started My Journey in 2020 to Learn the Code. I Begin with JavaScript and then I Started Web development.</p>
+      <hr>
+      <h1 style="color: white; margin: 60px" class="fade-in"><center>PROJECTS</center></h1>
+      <center>
+        <hr>
+        <div class="sites fade-in">
+          <div class="content">
+            <a
+              href="https://vishwashcv.github.io/sample_websites/Nothing/index.html"
+            >
+              <div>
+                <h1 class="h1 fade-in">JUST SITE</h1>
+                <p class="fade-in">Its just a website for design purpose.</p>
+              </div>
+            </a>
+            <a
+              class="sourcecode fade-in"
+              href="https://vishwashcv.github.io/sample_websites/Nothing/index.html"
+            >
+              VISIT</a
+            >
+            <a
+              class="sourcecode fade-in"
+              href="https://github.com/vishwashcv/sample_websites"
+            >
+              SOURCE CODE
+            </a>
+          </div>
+          <a
+            href="https://vishwashcv.github.io/sample_websites/Nothing/index.html"
+          >
+            <img src="./pics/Screenshot (131).png"
+          /></a>
+        </div>
+        <hr>
+        <div class="sites fade-in ">
+          <div class="content">
+            <a href="https://vishwashcv.github.io/sample_websites/index.html">
+              <div>
+                <h1 class="h1 fade-in">TIME TABLE</h1>
+                <p class="fade-in">This Time Table is build for html layout practice.</p>
+              </div>
+            </a>
+            <a
+              class="sourcecode fade-in"
+              href="https://vishwashcv.github.io/sample_websites/index.html"
+            >
+              VISIT</a
+            >
+            <a
+              class="sourcecode fade-in"
+              href="https://github.com/vishwashcv/sample_websites"
+            >
+              SOURCE CODE
+            </a>
+          </div>
+          <a href="https://vishwashcv.github.io/sample_websites/index.html">
+            <img src="./pics/Screenshot (132).png"
+          /></a>
+        </div>
+        <hr>
+        <div class="sites fade-in">
+          <div class="content">
+            <a
+              href="https://vishwashcv.github.io/sample_websites/flipkart/flipkart site.html"
+            >
+              <div>
+                <h1 class="h1 fade-in">FLIPKART CLONE</h1>
+                <p class="fade-in">This website is build for flipkart clone UI</p>
+              </div>
+            </a>
+            <a
+              class="sourcecode fade-in"
+              href="https://vishwashcv.github.io/sample_websites/flipkart/flipkart site.html"
+            >
+              VISIT</a
+            >
+            <a
+              class="sourcecode fade-in"
+              href="https://github.com/vishwashcv/sample_websites"
+            >
+              SOURCE CODE
+            </a>
+          </div>
+          <a
+            href="https://vishwashcv.github.io/sample_websites/flipkart/flipkart site.html "
+          >
+            <img src="./pics/Screenshot (135).png"
+          /></a>
+        </div>
+        <hr>
+        <div class="sites fade-in">
+          <div class="content">
+            <a
+              href="https://vishwashcv.github.io/sample_websites/web2/index.html"
+            >
+              <h1 class="h1 fade-in">FOOD ORDER</h1>
+              <p class="fade-in">This website is build for to order foods (UI)</p>
+            </a>
+            <a
+              class="sourcecode fade-in"
+              href="https://vishwashcv.github.io/sample_websites/web2/index.html"
+            >
+              VISIT</a
+            >
+            <a
+              class="sourcecode fade-in"
+              href="https://github.com/vishwashcv/sample_websites"
+            >
+              SOURCE CODE
+            </a>
+          </div>
+          <a
+            href="https://vishwashcv.github.io/sample_websites/web2/index.html"
+          >
+            <img src="./pics/Screenshot (136).png"
+          /></a>
+        </div>
+        <hr>
+        <div class="sites fade-in">
+          <div class="content">
+            <a
+              href="https://vishwashcv.github.io/sample_websites/university%20site/index.html"
+            >
+              <div>
+                <h1 class="h1 fade-in">UNIVERSITY</h1>
+                <p class="fade-in">
+                  This University Project build for college students, and
+                  college management.
+                </p>
+              </div>
+            </a>
+            <a
+              class="sourcecode fade-in"
+              href="https://vishwashcv.github.io/sample_websites/university%20site/index.html"
+            >
+              VISIT</a
+            >
+            <a
+              class="sourcecode fade-in"
+              href="https://github.com/vishwashcv/sample_websites"
+            >
+              SOURCE CODE
+            </a>
+          </div>
+          <a
+            href="https://vishwashcv.github.io/sample_websites/university%20site/index.html"
+          >
+            <img src="./pics/Screenshot (137).png"
+          /></a>
+        </div>
+      </center>
+    </div>
+  </body>
+  <script>
+    const faders =document.querySelectorAll('.fade-in');
+    const appearOptions = {
+    };
+    const appearOnscroll = new IntersectionObserver
+  (function (
+    entries, appearOnscroll
+    ){
+      entries.forEach(entry => {
+        if(!entry.isIntersecting) {
+          return;
+        } else {
+          entry.target.classList.add("appear");
+          appearOnscroll.unobserve(entry.target);
+        }
+      })
+    },
+    appearOptions);
+    faders.forEach(fader => {
+      appearOnscroll.observe(fader);
+    })
+  </script>
+</html>
