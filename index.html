@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vishwash portfolio</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✌🏻</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👍🏻</text></svg>">
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
@@ -14,6 +14,7 @@
   <style>
     * {
       font-family: "Poppins", sans-serif;
+      box-sizing: border-box;
     }
     html {
       margin: 0;
@@ -72,7 +73,7 @@
       right: 0;
       bottom: 0;
       display: block;
-      background: url(HERO.jpg);
+      background: url("https://wallpapercave.com/dwp1x/wp2234604.jpg");
       
       background-size: cover;
       transform-origin: center center 0;
@@ -85,7 +86,7 @@
       z-index: 2;
       position: absolute;
       top: 100vh;
-      background: #a4de02;
+      background: #24272E ;
       line-height: 30px;
       font-weight: lighter;
       padding: 40px;
@@ -101,8 +102,9 @@
       width: 70%;
       justify-content: center;
       align-items: center;
-      padding: 2%; 
+      padding: 0%; 
       transition: 0.5s;
+      padding-right: 30px;
     }
 
     img:hover {
@@ -111,6 +113,7 @@
     }
     .sites {
       display: block;
+      padding: 2%;
     }
 
     .sourcecode {
@@ -118,7 +121,8 @@
       padding: 10px;
       margin: 10px;
       background-color: white;
-      color: #a4de02;
+      color:#24272E;
+;
       
     }
     .sourcecode:hover {
@@ -151,6 +155,10 @@
       z-index: 2;
     }
 
+    .flex {
+      display: flex;
+    }
+
     @-moz-keyframes slidein-left {
       from {
         margin-left: 100%;
@@ -179,6 +187,8 @@
       -moz-animation-name: slidein-right;
       -webkit-animation-name: slidein-right;
     }
+
+    
 
     @-moz-keyframes slidein-right {
       from {
@@ -216,12 +226,15 @@
         width: 100%;
         margin: 0 2%;
       }
+      .flex {
+        display: block;
+      }
     }
   </style>
   <body>
     <header>
-      <h1 style="color: black;">Hi, I'm vishwash</h1>
-      <h2 style="color: black;">I'm Frontend Developer</h2>
+      <h1 style="color: white;">Hi, I'm vishwash</h1>
+      <h2 style="color: white;">I'm Frontend Developer</h2>
     </header>
     <div class="container">
       <h1 style="color: white;">ABOUT ME</h1>
@@ -229,15 +242,16 @@
 
         <br><br>I am learning the following technologies in order to groom myself more into web / UI development.
         
-        <br><br>HTML, CSS, React JS, Bootstrap library, PHP, MySQL.
+        <br><br>HTML, CSS, React JS, PHP, MySQL.
         
         <br><br>Hope you like this.
         
         Please do not hesitate to give feedbacks if you find any.</p>
-      <hr>
+     <hr/>
       <h1 style="color: white; margin: 60px" class="fade-in"><center>PROJECTS</center></h1>
       <center>
-        <hr>
+        
+        <div class="flex">
         <div class="sites fade-in">
           <div class="content">
             <a
@@ -260,14 +274,18 @@
             >
               SOURCE CODE
             </a>
+            <div class="icon">
+            <img style="width: 180px;align-items: center;padding: 40px;"src="./pics/html_css_js.png" />
+            </div>
           </div>
+         
           <a
             href="https://vishwashcv.github.io/sample_websites/Nothing/index.html"
           >
             <img src="./pics/Screenshot (131).png"
           /></a>
         </div>
-        <hr>
+        
         <div class="sites fade-in ">
           <div class="content">
             <a href="https://vishwashcv.github.io/sample_websites/index.html">
@@ -288,12 +306,20 @@
             >
               SOURCE CODE
             </a>
+            <div class="icon">
+              <img style="width: 100px;align-items: center;padding-top: 40px;" src="./pics/html_css.png" />
+            </div>
           </div>
           <a href="https://vishwashcv.github.io/sample_websites/index.html">
+            
             <img src="./pics/Screenshot (132).png"
-          /></a>
+          />
+        </a>
         </div>
-        <hr>
+      
+     
+
+        <div class="flex"></div>
         <div class="sites fade-in">
           <div class="content">
             <a
@@ -316,6 +342,9 @@
             >
               SOURCE CODE
             </a>
+            <div class="icon">
+              <img style="width: 100px;align-items: center;padding-top: 40px;" src="./pics/html_css.png" />
+            </div>
           </div>
           <a
             href="https://vishwashcv.github.io/sample_websites/flipkart/flipkart site.html "
@@ -323,7 +352,9 @@
             <img src="./pics/Screenshot (135).png"
           /></a>
         </div>
-        <hr>
+        </div>
+        
+        <div class="flex">
         <div class="sites fade-in">
           <div class="content">
             <a
@@ -344,18 +375,24 @@
             >
               SOURCE CODE
             </a>
+            <div class="icon">
+              <img style="width: 100px;align-items: center;padding-top: 40px;" src="./pics/html_css.png" />
+            </div>
           </div>
           <a
             href="https://vishwashcv.github.io/sample_websites/web2/index.html"
           >
-            <img src="./pics/Screenshot (136).png"
+            <img style="margin-top: 90px;" src="./pics/Screenshot (136).png"
           /></a>
         </div>
-        <hr>
+        
+        
+
+       
         <div class="sites fade-in">
           <div class="content">
             <a
-              href="https://vishwashcv.github.io/sample_websites/university%20site/index.html"
+              href="https://vishwashcv.000webhostapp.com/university/index.html"
             >
               <div>
                 <h1 class="h1 fade-in">UNIVERSITY</h1>
@@ -367,7 +404,7 @@
             </a>
             <a
               class="sourcecode fade-in"
-              href="https://vishwashcv.github.io/sample_websites/university%20site/index.html"
+              href="https://vishwashcv.000webhostapp.com/university/index.html"
             >
               VISIT</a
             >
@@ -377,14 +414,17 @@
             >
               SOURCE CODE
             </a>
+            <div class="icon">
+              <img style="width: 180px;align-items: center;padding: 40px;"src="./pics/html_css_js.png" />
+              </div>
           </div>
           <a
-            href="https://vishwashcv.github.io/sample_websites/university%20site/index.html"
+            href="https://vishwashcv.000webhostapp.com/university/index.html"
           >
-            <img src="./pics/Screenshot (137).png"
+            <img style="width: 80%; margin-top: 20px;"src="./pics/Screenshot (137).png"
           /></a>
         </div>
-
+        
 
         <div class="sites fade-in">
           <div class="content">
@@ -404,6 +444,9 @@
             >
               SOURCE CODE
             </a>
+            <div class="icon">
+              <img style="box-sizing:border-box;width: 100px;align-items: center;padding: 20px;margin:30px;" src="./pics/react.png" />
+            </div>
           </div>
           <a
             href="#"
@@ -411,8 +454,11 @@
             <img src="./pics/one.png"
           /></a>
         </div>
+        </div>
+        
 
 
+        <div class="flex">
         <div class="sites fade-in">
           <div class="content">
             <a
@@ -430,13 +476,17 @@
               href="https://github.com/vishwashcv/reactjs"
             >
               SOURCE CODE
-            </a>
+          </a>
+          <div class="icon">
+            <img style="box-sizing:border-box;width: 100px;align-items: center;padding: 20px;margin:30px;" src="./pics/react.png" />
+          </div>
           </div>
           <a
             href="#"
           >
             <img src="./pics/two.png"
           /></a>
+        </div>
         </div>
         
       </center>
