@@ -1,515 +1,287 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vishwash portfolio</title>
-    <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👍🏻</text></svg>"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <style>
-    * {
-      font-family: "Poppins", sans-serif;
-    }
-    html {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-    }
-
-    body {
-      color: white;
-      margin: 0;
-      padding: 0;
-      perspective: 1px;
-      transform-style: preserve-3d;
-      height: 100%;
-      width: 100%;
-      overflow-y: scroll;
-      overflow-x: hidden;
-    }
-
-    header {
-      box-sizing: border-box;
-      min-height: 100vh;
-      position: relative;
-      transform-style: inherit;
-      width: 100vw;
-      text-align: center;
-      text-transform: uppercase;
-    }
-
-    header h1 {
-      margin: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    h2 {
-      position: absolute;
-      left: 50%;
-      top: 53%;
-      transform: translate(-50%, -50%);
-    }
-
-    header,
-    header:before {
-      background: 50% 50% / cover;
-    }
-
-    header::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      display: block;
-      background: url(HERO.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-color: rgb(255, 208, 0);
-      transform-origin: center center 0;
-      transform: translateZ(-1px) scale(2);
-      z-index: -1;
-      min-height: 100vh;
-    }
-
-    .container {
-      z-index: 2;
-      position: absolute;
-      top: 100vh;
-      display: block;
-      background: #a4de02;
-      line-height: 30px;
-      font-weight: lighter;
-      padding: 40px;
-      color: grey;
-    }
-    p {
-      font-size: 130%;
-    }
-    .about {
-      padding: 50px;
-      background-image: url("pics/862202.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-    a {
-      color: white;
-      text-decoration: none;
-      text-transform: uppercase;
-    }
-
-    img {
-      width: 70%;
-      justify-content: center;
-      align-items: center;
-      padding: 2%;
-      transition: 0.5s;
-    }
-
-    img:hover {
-      opacity: 0.7;
-      transition: 0.5s;
-    }
-    .sites {
-      display: block;
-    }
-
-    .sourcecode {
-      border: 1px solid white;
-      padding: 10px;
-      margin: 10px;
-      background-color: white;
-      color: #a4de02;
-    }
-    .sourcecode:hover {
-      background-color: rgb(1, 110, 1);
-      transition: 1s;
-      color: white;
-    }
-    .content {
-      padding: 20px;
-    }
-    h1 {
-      -moz-animation-duration: 3s;
-      -webkit-animation-duration: 3s;
-      -moz-animation-name: slidein-left;
-      -webkit-animation-name: slidein-left;
-    }
-
-    .fade-in {
-      opacity: 0;
-      transition: opacity 250ms ease-in;
-    }
-
-    .fade-in.appear {
-      opacity: 1;
-      transition: 2s;
-    }
-    img:hover {
-      transform: scale(1.1);
-      z-index: 2;
-    }
-
-    @-moz-keyframes slidein-left {
-      from {
-        margin-left: 100%;
-        width: 300%;
-      }
-      to {
-        margin-left: 0%;
-        width: 100%;
-      }
-    }
-
-    @-webkit-keyframes slidein-left {
-      from {
-        margin-left: 100%;
-        width: 300%;
-      }
-      to {
-        margin-left: 0%;
-        width: 100%;
-      }
-    }
-
-    header {
-      -moz-animation-duration: 3s;
-      -webkit-animation-duration: 3s;
-      -moz-animation-name: slidein-right;
-      -webkit-animation-name: slidein-right;
-    }
-
-    @-moz-keyframes slidein-right {
-      from {
-        margin-right: 100%;
-        width: 300%;
-      }
-      to {
-        margin-right: 0%;
-      }
-    }
-
-    @-webkit-keyframes slidein-right {
-      from {
-        margin-right: 100%;
-        width: 300%;
-      }
-      to {
-        margin-right: 0%;
-      }
-    }
-
-    .fade {
-      width: 70%;
-    }
-
-    @media (max-width: 1000px) {
-      h2 {
-        top: 57%;
-        font-size: 100%;
-      }
-      h1 {
-        font-size: 150%;
-      }
-      img {
-        width: 100%;
-        margin: 0 2%;
-      }
-    }
-  </style>
-  <body>
-    <header>
-      <h1 style="color: black">Hi, I'm vishwash</h1>
-      <h2 style="color: #000000">I'm Frontend Developer</h2>
-    </header>
-
-    <div class="container">
-      <div class="about">
-        <h1 style="color: white">ABOUT ME</h1>
-        <p style="color: white; padding-bottom: 20px">
-          I am passionate about designing and developing UI and websites using
-          latest technologies, here are some sample projects added which I have
-          developed on my own interest. I am ready to do freelancing for any
-          kind of designing requirements.
-
-          <br /><br />I am learning the following technologies in order to groom
-          myself more into web / UI development.
-
-          <br /><br />HTML, CSS, React JS, Bootstrap library, PHP, MySQL.
-
-          <br /><br />Hope you like this. Please do not hesitate to give
-          feedbacks if you find any.
-        </p>
-      </div>
-
-      <h1 style="color: white; margin: 60px" class="fade-in">
-        <center>PROJECTS</center>
-      </h1>
-      <center>
-        <hr />
-        <div class="sites fade-in">
-          <div class="content">
-            <a
-              href="https://vishwashcv.github.io/sample_websites/Nothing/index.html"
-            >
-              <div>
-                <h1 class="h1 fade-in">JUST SITE</h1>
-                <p class="fade-in">Its just a website for design purpose.</p>
-              </div>
-            </a>
-            <a
-              class="sourcecode fade-in"
-              href="https://vishwashcv.github.io/sample_websites/Nothing/index.html"
-            >
-              VISIT</a
-            >
-            <a
-              class="sourcecode fade-in"
-              href="https://github.com/vishwashcv/sample_websites"
-            >
-              SOURCE CODE
-            </a>
-          </div>
-          <a
-            href="https://vishwashcv.github.io/sample_websites/Nothing/index.html"
-          >
-            <img src="./pics/Screenshot (131).png"
-          /></a>
-        </div>
-        <hr />
-        <div class="sites fade-in">
-          <div class="content">
-            <a href="https://vishwashcv.github.io/sample_websites/index.html">
-              <div>
-                <h1 class="h1 fade-in">TIME TABLE</h1>
-                <p class="fade-in">
-                  This Time Table is build for html layout practice.
-                </p>
-              </div>
-            </a>
-            <a
-              class="sourcecode fade-in"
-              href="https://vishwashcv.github.io/sample_websites/index.html"
-            >
-              VISIT</a
-            >
-            <a
-              class="sourcecode fade-in"
-              href="https://github.com/vishwashcv/sample_websites"
-            >
-              SOURCE CODE
-            </a>
-          </div>
-          <a href="https://vishwashcv.github.io/sample_websites/index.html">
-            <img src="./pics/Screenshot (132).png"
-          /></a>
-        </div>
-        <hr />
-        <div class="sites fade-in">
-          <div class="content">
-            <a
-              href="https://vishwashcv.github.io/sample_websites/flipkart/flipkart site.html"
-            >
-              <div>
-                <h1 class="h1 fade-in">FLIPKART CLONE</h1>
-                <p class="fade-in">
-                  This website is build for flipkart clone UI
-                </p>
-              </div>
-            </a>
-            <a
-              class="sourcecode fade-in"
-              href="https://vishwashcv.github.io/sample_websites/flipkart/flipkart site.html"
-            >
-              VISIT</a
-            >
-            <a
-              class="sourcecode fade-in"
-              href="https://github.com/vishwashcv/sample_websites"
-            >
-              SOURCE CODE
-            </a>
-          </div>
-          <a
-            href="https://vishwashcv.github.io/sample_websites/flipkart/flipkart site.html "
-          >
-            <img src="./pics/Screenshot (135).png"
-          /></a>
-        </div>
-        <hr />
-        <div class="sites fade-in">
-          <div class="content">
-            <a
-              href="https://vishwashcv.github.io/sample_websites/web2/index.html"
-            >
-              <h1 class="h1 fade-in">FOOD ORDER</h1>
-              <p class="fade-in">
-                This website is build for to order foods (UI)
-              </p>
-            </a>
-            <a
-              class="sourcecode fade-in"
-              href="https://vishwashcv.github.io/sample_websites/web2/index.html"
-            >
-              VISIT</a
-            >
-            <a
-              class="sourcecode fade-in"
-              href="https://github.com/vishwashcv/sample_websites"
-            >
-              SOURCE CODE
-            </a>
-          </div>
-          <a
-            href="https://vishwashcv.github.io/sample_websites/web2/index.html"
-          >
-            <img src="./pics/Screenshot (136).png"
-          /></a>
-        </div>
-        <hr />
-        <div class="sites fade-in">
-          <div class="content">
-            <a
-              href="https://vishwashcv.github.io/sample_websites/university%20site/index.html"
-            >
-              <div>
-                <h1 class="h1 fade-in">UNIVERSITY</h1>
-                <p class="fade-in">
-                  This University Project build for college students, and
-                  college management.
-                </p>
-              </div>
-            </a>
-            <a
-              class="sourcecode fade-in"
-              href="https://vishwashcv.github.io/sample_websites/university%20site/index.html"
-            >
-              VISIT</a
-            >
-            <a
-              class="sourcecode fade-in"
-              href="https://github.com/vishwashcv/sample_websites"
-            >
-              SOURCE CODE
-            </a>
-          </div>
-          <a
-            href="https://vishwashcv.github.io/sample_websites/university%20site/index.html"
-          >
-            <img src="./pics/Screenshot (137).png"
-          /></a>
-        </div>
-        <hr/>
-
-        <div class="sites fade-in">
-          <div class="content">
-            <a href="#">
-              <div>
-                <h1 class="h1 fade-in">INSTAGRAM UI</h1>
-                <p class="fade-in">
-                  This UI is build for clone purpose of the web. It is made with
-                  react js.
-                </p>
-              </div>
-            </a>
-            <a
-              class="sourcecode fade-in"
-              href="https://github.com/vishwashcv/reactjs"
-            >
-              SOURCE CODE
-            </a>
-          </div>
-          <a href="#"> <img src="./pics/one.png" /></a>
-        </div>
-        <hr/>
-        <div class="sites fade-in">
-          <div class="content">
-            <a href="#">
-              <div>
-                <h1 class="h1 fade-in">MESSENGER UI</h1>
-                <p class="fade-in">
-                  This UI is build for clone purpose of the web. It is made with
-                  react js.
-                </p>
-              </div>
-            </a>
-            <a
-              class="sourcecode fade-in"
-              href="https://github.com/vishwashcv/reactjs"
-            >
-              SOURCE CODE
-            </a>
-          </div>
-          <a href="#"> <img src="./pics/two.png" /></a>
-        </div>
-
-        <hr/>
-        <div class="sites fade-in">
-              <div class="content">
-                    <a
-                      href="https://vishwashcv.000webhostapp.com/ticket_booking/index.html"
-                    >
-                      <div>
-                            <h1 class="h1 fade-in">TICKET BOOKING</h1>
-                            <p class="fade-in">
-                              This Ticket booking Project build for to book the tickets of the movie.
-                            </p>
-                      </div>
-                    </a>
-                    <a
-                      class="sourcecode fade-in"
-                      href="https://github.com/vishwashcv/ticket_booking"
-                    >
-                      SOURCE CODE
-                    </a>
-              </div>
-              <a
-                href="https://vishwashcv.000webhostapp.com/ticket_booking/index.html"
-              >
-                <img style="width: 80%; margin-top: 20px;"src="./pics/Screenshot (171).png"
-              /></a>
-        </div>
-        <hr/>
-       
-  </div>
-       
-
-
-      </center>
-    </div>
-  </body>
-  <script>
-    const faders = document.querySelectorAll(".fade-in");
-    const appearOptions = {};
-    const appearOnscroll = new IntersectionObserver(function (
-      entries,
-      appearOnscroll
-    ) {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) {
-          return;
-        } else {
-          entry.target.classList.add("appear");
-          appearOnscroll.unobserve(entry.target);
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="https://i.dlpng.com/static/png/6667145_preview.png">
+    <title>Vishwash CV</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
         }
-      });
-    },
-    appearOptions);
-    faders.forEach((fader) => {
-      appearOnscroll.observe(fader);
-    });
-  </script>
+        .nav {
+            padding: 2%;
+            padding-left: 5%;
+            padding-top: 3%;
+            display: flex;
+            justify-content: space-between;
+            width: 100vw;
+        }
+        .nav-right {
+            display: flex;
+            font-weight: bolder;
+            margin-right: 5%;
+            width: 30%;
+            
+        }
+        .nav-right-links{
+            padding-right: 20%;
+            padding-top: 3%;
+        }
+        .nav-right-links a {
+            opacity: 0.4;
+            text-decoration: none;
+            color: black;
+        }
+        .nav-right-links a:hover {
+            opacity: 1;
+            border-bottom: solid 1px black;
+        }
+        .content-para-1 {
+            font-size: 250%;
+            font-weight: bolder;
+            margin-left: 5%;
+            margin-top: 5%;
+            display: flex;
+            justify-content: space-between;
+            margin-right: 5%;
+
+        }
+        .content-para-1-1 {
+            padding: 1%;
+        }
+        .para-1{
+            padding: 1%;
+        }
+        .para-1-2 {
+            width: 60%;
+        }
+        .img {
+            width: 100%;
+            margin-bottom: 10px;
+            border: solid 1px black;
+        }
+        .content-2 {
+            display: block;
+            margin: 3%;
+            margin-top: 0%;
+            justify-content: center;
+        }
+        .content-2-1 {
+            margin: 5%;
+            justify-content: space-between;
+            font-size: 120%;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .content-2-title {
+            display: block;
+            margin-left: 5%;
+            margin-top: 4%;
+            padding-left: 2%;
+
+        }
+        .footer-icon {
+            width: 48px;
+            margin: 0 auto;
+        }
+        footer {
+            margin: 7% 0;
+        }
+        hr {
+            width: 90%;
+            margin: 0 auto;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .content2 {
+            display: flex;
+            width: 100%;
+        }
+        .hr {
+            margin-top: 20%;
+        }
+        .nav-h1 {
+            padding: 1%;
+        }   
+        .active {
+            opacity: 1 !important;
+        }
+        .content-2-1:hover {
+            transform: scale(1.1);
+        }
+        .para-1 {
+            font-size: 75%;
+            width: 90%;
+        }
+        @media screen and (max-width: 1100px) {
+	    *{
+		font-size:98%;
+	     }
+	    h1{
+		font-size: 160%;
+	    }
+            .nav {
+                padding: 8%;
+            }
+            .content-para-1 {
+                font-size: 160%;
+            }
+            .para-1-2 {
+                width: 80%;
+            }
+            .nav {
+                display: block;
+            }
+            .nav-right {
+                display: block;
+                margin-top: 5%;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .nav {
+                padding: 8%;
+            }
+            .content-2 {
+                display: block;
+                font-size: 100%;
+            }
+            .content2 {
+                display: block;
+                width: 100%;
+            }
+            .nav-right-links{
+                padding-right: 20%;
+                padding-top: 12%;
+            }
+            .content-2-1 {
+                padding-top: 20%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav">
+            <h1 class="nav-h1">Vishwash CV</h1>
+            <div class="nav-right nav-links">
+                <div class="nav-right-links">
+                    <a class="active" href="">Works</a>
+                </div>
+                <div class="nav-right-links">
+                   <a href="./vishwash.pdf">Resume</a>
+                </div>
+                <div class="nav-right-links">
+                    <a href="https://www.linkedin.com/in/vishwash-cv-59a698233">LinkedIn</a>
+                </div>
+                <div class="nav-right-links">
+                    <a href="https://www.behance.net/vishwashcv">Behance</a>
+                 </div>
+            </div>
+        </div>
+    </nav>
+    <div class="content-para-1">
+        <div class="content-para-1-1">
+            <div class="para-1 para-1-1">
+            <p>👋🏻 Hello, I'm Vishwash and I'm Frontend Developer!</p>
+            </div>
+            <div class="para-1 para-1-2">
+            <h3>I am passionate about designing and developing UI and websites using
+                latest technologies, here are some sample projects added which I have
+                developed on my own interest. I am ready to do freelancing for any
+                kind of designing requirements.</h3>
+            </div>
+        </div>
+    </div>
+    <div class="hr"><center><hr/></center></div>
+    <div class="content-2-title">
+        <h1>My works</h1>
+    </div>
+    
+    <div class="content-2">
+        <div class="content2">
+            <div class="content-2-1">
+               
+                <img class="img" src="./images/vadooanduuki.jpg" />
+                <h1>Vadoo & UUKI</h1>
+                <p>UI / UX Designer Intern May 2022</p>
+            
+            </div>
+            <div class="content-2-1"> 
+                
+                <img class="img" src="./images/uuki.png" />
+                <h1>UUKI Communtiy platform</h1>
+                <p>Project Mobile app & Website May 2022</p>
+    
+            </div>
+        </div>
+        <div class="content2">
+            <div class="content-2-1">
+                <a href="https://vishwashcv.github.io/sample_websites/Nothing/index.html">
+                <img class="img" src="./images/Screenshot (106).png" />
+                <h1>WEBSITE</h1>
+                <p>Its just a website for design purpose.</p>
+            </a>
+            </div>
+            <div class="content-2-1"> 
+                <a href="https://vishwashcv.github.io/sample_websites/index.html">
+                <img class="img" src="./images/Screenshot (101).png" />
+                <h1>TIME TABLE</h1>
+                <p>This Time Table is build for html layout practice.</p>
+            </a>
+            </div>
+     </div>
+     <div class="content2">
+        <div class="content-2-1">
+            <a href="https://vishwashcv.github.io/sample_websites/flipkart/flipkart site.html">
+            <img class="img" src="./images/Screenshot (102).png" />
+            <h1>FLIPKART CLONE</h1>
+            <p>This website is build for flipkart clone UI.</p>
+        </a>
+        </div>
+        <div class="content-2-1"> 
+            <a href="https://vishwashcv.github.io/sample_websites/web2/index.html">
+            <img class="img" src="./images/Screenshot (103).png" />
+            <h1>FOOD ORDER</h1>
+            <p>This website is build for to order foods (UI).</p>
+        </a>
+        </div>
+ </div>
+ <div class="content2">
+    <div class="content-2-1">
+        <a href="https://vishwash.000webhostapp.com/">
+        <img class="img" src="./images/Screenshot (104).png" />
+        <h1>UNIVERSITY</h1>
+        <p> This University Project build for college students, and
+            college management.</p>
+    </a>
+    </div>
+    <div class="content-2-1"> 
+        <a href="https://vishwascv.000webhostapp.com/">
+        <img class="img" src="./images/Screenshot (105).png" />
+        <h1>TICKET BOOKING</h1>
+        <p>This Ticket booking Project build for to book the tickets of the movie.</p>
+    </a>
+    </div>
+</div>
+    </div>
+    <center><hr/></center>
+    <footer>
+        <div class="footer-icon">
+            <a href="mailto:vishwashclever@gmail.com">
+            <img class="footer-icon" src="./images/email.png"/>
+        </a>
+        </div>
+    </footer>
+</body>
 </html>
