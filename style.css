@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+  }
+  .nav {
+    padding: 2%;
+    padding-left: 5%;
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+  }
+  .nav-right {
+    display: flex;
+    font-weight: bolder;
+    margin-right: 5%;
+    width: 30%;
+  }
+  .nav-right-links {
+    padding-right: 20%;
+    padding-top: 3%;
+  }
+  .nav-right-links a {
+    opacity: 0.4;
+    text-decoration: none;
+    color: black;
+  }
+  .nav-right-links a:hover {
+    opacity: 1;
+    border-bottom: solid 1px black;
+  }
+  .content-para-1 {
+    font-size: 200%;
+    font-weight: bolder;
+    margin-left: 5%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5%;
+  }
+  .content-para-1-1 {
+    padding: 1%;
+  }
+  .para-1 {
+    padding: 1%;
+  }
+  .para-1-2 {
+    width: 60%;
+  }
+  .img {
+    width: 100%;
+    margin-bottom: 10px;
+    border: solid 1px black;
+  }
+  .content-2 {
+    display: block;
+    margin: 3%;
+    margin-top: 0%;
+    justify-content: center;
+  }
+  .content-2-1 {
+    margin: 5%;
+    justify-content: space-between;
+    font-size: 120%;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .content-2-title {
+    display: block;
+    margin-left: 5%;
+    margin-top: 4%;
+    padding-left: 2%;
+  }
+  .footer-icon {
+    width: 48px;
+    margin: 0 auto;
+  }
+  footer {
+    margin: 7% 0;
+  }
+  hr {
+    width: 90%;
+    margin: 0 auto;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  .content2 {
+    display: flex;
+    width: 100%;
+  }
+  .hr {
+    margin-top: 20%;
+  }
+  .nav-h1 {
+    padding: 1%;
+  }
+  .active {
+    opacity: 1 !important;
+  }
+  .content-2-1:hover {
+    transform: scale(1.1);
+  }
+  .para-1 {
+    font-size: 75%;
+    width: 90%;
+  }
+  .imgworks {
+    width: 100%;
+  }
+  .spacing {
+    padding: 30px;
+  }
+  .imgpre {
+    width: 10%;
+  }
+  .design {
+    width: 140px;
+    opacity: 0.4;
+  }
+  .design:hover {
+    border-bottom: 1px solid black;
+    opacity: 1;
+  }
+  @media screen and (max-width: 1100px) {
+    * {
+      font-size: 98%;
+    }
+    h1 {
+      font-size: 160%;
+    }
+    .nav {
+      padding: 8%;
+    }
+    .content-para-1 {
+      font-size: 160%;
+    }
+    .para-1-2 {
+      width: 80%;
+    }
+    .nav {
+      display: block;
+    }
+    .nav-right {
+      display: block;
+      margin-top: 5%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .nav {
+      padding: 8%;
+    }
+    .content-2 {
+      display: block;
+      font-size: 100%;
+    }
+    .content2 {
+      display: block;
+      width: 100%;
+    }
+    .nav-right-links {
+      padding-right: 20%;
+      padding-top: 12%;
+    }
+    .content-2-1 {
+      padding-top: 20%;
+    }
+  }
