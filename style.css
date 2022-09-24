@@ -5,10 +5,11 @@
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
   }
+  .space{
+    padding: 2%;
+  }
   .nav {
     padding: 2%;
-    padding-left: 5%;
-    padding-top: 3%;
     display: flex;
     justify-content: space-between;
     width: 100vw;
@@ -52,8 +53,12 @@
   }
   .img {
     width: 100%;
+    max-width: 1000px;
     margin-bottom: 10px;
-    border: solid 1px black;
+    
+  }
+  .img-1 {
+    border: 1px solid rgb(175, 175, 175);
   }
   .content-2 {
     display: block;
@@ -103,7 +108,7 @@
     opacity: 1 !important;
   }
   .content-2-1:hover {
-    transform: scale(1.1);
+    transform: scale(1);
   }
   .para-1 {
     font-size: 75%;
@@ -125,6 +130,57 @@
   .design:hover {
     border-bottom: 1px solid black;
     opacity: 1;
+  }
+  .imgb{
+    width: 100%;
+  }
+  .body{
+    padding: 0 5%;
+  }
+  h3{
+    font-size: 150%;
+  }
+  .spacing {
+    margin: 20px 0;
+  }
+  .space {
+    margin: 20px ;
+  }
+  .imgs {
+    width: 60vw;
+  }
+  .imgs1 {
+    width: 80vw;
+  }
+  .content-2-1-last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+  }
+  .flex{
+    display: flex;
+    justify-content: space-between;
+  }
+  .flex-1{
+    padding: 20px;
+  }
+  .scr {
+    width: 20vw;
+  }
+  .flex-2{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flexl{
+    padding: 10%;
+  }
+  .scr-1{
+    width: 300px;
+    padding: 20px;
   }
   @media screen and (max-width: 1100px) {
     * {
@@ -149,6 +205,19 @@
       display: block;
       margin-top: 5%;
     }
+    .imgs {
+      width: 80vw;
+    }
+    .flex{
+      display: block;
+    }
+    .scr {
+      width: 60vw;
+      padding: 30px;
+    }
+    .scr-1 {
+      width: 60vw;
+    }
   }
   @media screen and (max-width: 600px) {
     .nav {
@@ -169,4 +238,5 @@
     .content-2-1 {
       padding-top: 20%;
     }
+    
   }
